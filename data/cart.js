@@ -23,8 +23,6 @@ export function addToCart(addedItemId) {
       quantity: 1,
     });
   }
-
-  saveToStorage();
 }
 
 export function removeFromCart(deletedItemId) {
@@ -37,7 +35,6 @@ export function removeFromCart(deletedItemId) {
   });
 
   cart = newCart;
-  saveToStorage();
 }
 
 function saveToStorage() {
